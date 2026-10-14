@@ -260,10 +260,6 @@ always @(posedge clk) begin
         default: sreg <= 24'hFF_FFFF; // End of configuration
     endcase
 end
-
-// HTOL and VTOL are intentionally retained for interface compatibility.
-// They describe external video timing and are not OV2640 SCCB registers.
-
 endmodule
 
 
